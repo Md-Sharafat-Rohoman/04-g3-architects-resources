@@ -11,7 +11,6 @@ body {
 header {
     background-color: bisque;
     padding: 30px 150px;
-    /* width: 100%; */
 }
 
 nav {
@@ -22,17 +21,11 @@ nav {
 
 .g3-architect {
     font-size: 30px;
-    /* font-weight: 900; */
     font-style: bold;
 }
 
-/* nav li{
-    list-style: none;
-} */
 ul>li {
     list-style: none;
-    /* text-decoration: none; */
-    /* color: black; */
     font-size: 13px;
     color: gray;
 }
@@ -80,63 +73,91 @@ ul {
 
 /* main section related styles */
 main {
-    max-width: 1140px;
-    margin: 50px auto;
+    /* max-width: 1140px; */
+    /* margin: 20px auto; */
+    /* padding: 0px 20px; */
+
 }
 
 .team-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    width: 450px;
-    height: 450px;
+    /* width: 450px;
+    height: 450px; */
     border-radius: 5px;
     gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.team-decoration{
+    padding: 30px;
+    /* text-align: center; */
+}
+.team-decoration p{
+    color: rgb(138, 137, 137);
 }
 
 main img {
     width: 100%;
     height: 100%;
 }
-.first-header{
+
+.first-header {
     font-size: 40px;
+    font-weight: 900;
 }
-.quick-list{
+
+.quick-list {
     font-size: 40px;
     font-weight: 400;
     color: gray;
 }
-.features{
+
+.features {
     color: rgb(255, 94, 0);
     font-weight: 900;
+}
+
+.first-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px auto;
 }
 
 
 
 
 /* media query styles */
+/* small device */
 @media screen and (max-width:576px) {
-    /* *{
-        margin: 0px;
-        padding: 0px;
-    }
-    header {
-        padding: 0px;
-    } */
-
     .g3-architect {
         text-align: center;
     }
 
     nav {
         flex-direction: column;
-        /* width: 100%; */
     }
 
     header {
         background-color: bisque;
-        /* width: 100%; */
         padding: 20px;
     }
+
+    .first-div {
+        flex-direction: column-reverse;
+    }
+
+    .team-images {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* medium device related styles */
+@media screen and (min-width:576px) and (max-width:990px) {
+    
 
 }
